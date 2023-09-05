@@ -4,7 +4,7 @@ layout: base
 description: This is an interactive game in which you can create your own pizza using your own toppings that you choose 
 categories: [C4.9]
 type: hacks
-courses: { compsci: {week: 1}}
+courses: { compsci: {week: 2}}
 ---
 
 <!DOCTYPE html>

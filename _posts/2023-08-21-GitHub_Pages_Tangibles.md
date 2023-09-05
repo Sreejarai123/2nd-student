@@ -3,21 +3,17 @@ toc: true
 comments: true
 layout: post
 title: Review Ticket
-description: Example Review Ticket!!! This will help us communicate results.
+description: This is my week one review ticket in which I discuss what I accomplished and hope to accomplish from this week and hopefully next week as well. 
 type: tangibles
 courses: { compsci: {week: 1} }
 ---
 
 ### Summary of Accomplishments
 > Update Blog to contain all hacks.  
-- Reviewed with Pair.  Discuss/Show evidence.
-- Discuss laptop, cloud computer.
-- Discuss tools setup and troubles.
-- Show personal blog / home page.
-- Show how you are maintaining notes, answering hacks, and showing tangibles.  
-- How have you learned Markdown, HTML, CSS, JavaScript.
-- Show Jupyter Notebooks and how you have added and organized them in the blog.
-- Show evidence of using Slack Account, show app installed on Laptop and/or phone.  Show awared of #annoncements, #general, #coding.
-- Run make commands to build and test blog locally, before pushing changes to GitHub pages.
-- Discuss GitHub Account, show ability to push/pull changes from VSCode.
-- Discuss development on Themes, show how you plan to organized lab notebook.
+- Added in week 1 hacks
+    - Added in snake game, pizza game, quiz on me, weather app, python calculator and graphing calculator.
+- Recreated our repositories and alligned it with the new version that was pushed out
+- Had out live review and added a markdown table to the home page
+- had a couple challenges with the make command working so in turn had to reinstall the whole bundle again and restarted my computer and after a couple tries it ended up working. Also had issues with getting my new pages to show up in other location that were not week 1.
+- Added in a markdown table using html and then used html to add in a quiz about me that has a multiple choice section
+- next week want to figure out how to fix the layout of my blogs and begin to add/ create checkilists that show what I need to do for the week. 

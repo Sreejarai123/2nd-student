@@ -7,9 +7,8 @@ image: /images/snake.png
 categories: [C4.9]
 tags: [javascript]
 type: hacks
-courses: { compsci: {week: 1}}
+courses: { compsci: {week: 2}}
 ---
-
 
 <style>
 

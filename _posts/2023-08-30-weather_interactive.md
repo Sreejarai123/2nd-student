@@ -4,7 +4,7 @@ layout: base
 description: This is an interactive weather app that will help to inform you about the weather
 categories: [C4.9]
 type: hacks
-courses: { compsci: {week: 1}}
+courses: { compsci: {week: 2}}
 ---
 <!DOCTYPE html>
 <html>

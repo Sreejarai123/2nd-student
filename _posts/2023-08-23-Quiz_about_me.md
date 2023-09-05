@@ -3,7 +3,7 @@ title: Quiz on me
 layout: posts
 description: A quiz about me based off of the stuff on my home page
 type: hacks
-courses: { compsci: {week: 1}}
+courses: { compsci: {week: 2}}
 ---
 
 <!DOCTYPE html>

@@ -3,7 +3,7 @@ title: Python Calculator and Graphing Calculator
 layout: posts
 description: A calculator made from python
 type: hacks
-courses: { compsci: {week: 1}}
+courses: { compsci: {week: 2}}
 ---
 
 ## Python Calculator
