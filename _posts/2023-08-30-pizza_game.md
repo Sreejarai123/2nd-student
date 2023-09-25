@@ -68,3 +68,15 @@ courses: { compsci: {week: 2}}
 
       const crustType = document.getElementById("crust-type").value;
       pizza.style.border = crustType ===
+<html>
+<head>
+    <style>
+        body {
+            background-color: #ffffcc; /* Light Yellow color */
+        }
+    </style>
+</head>
+<body>
+    
+</body>
+</html>

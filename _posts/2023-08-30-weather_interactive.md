@@ -6,7 +6,6 @@ categories: [C4.9]
 type: hacks
 courses: { compsci: {week: 2}}
 ---
-<!DOCTYPE html>
 <html>
 <head>
   <title>Weather Map</title>

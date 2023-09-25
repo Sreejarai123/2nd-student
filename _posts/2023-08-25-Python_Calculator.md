@@ -152,6 +152,18 @@ courses: { compsci: {week: 2}}
 </script>
 </body>
 </html>
+<html>
+<head>
+    <style>
+        body {
+            background-color: green; /* Green color */
+        }
+    </style>
+</head>
+<body>
+    
+</body>
+</html>
 
 
 

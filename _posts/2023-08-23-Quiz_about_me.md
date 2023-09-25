@@ -1,6 +1,6 @@
 ---
 title: Quiz on me
-layout: posts
+layout: post
 description: A quiz about me based off of the stuff on my home page
 type: hacks
 courses: { compsci: {week: 2}}
@@ -86,6 +86,19 @@ courses: { compsci: {week: 2}}
           userAnswers.push(selectedOption.value);
         }
       }
+      <html>
+<head>
+    <style>
+        body {
+            background-color: #e5c3d1; /* Light Purple color */
+        }
+    </style>
+</head>
+<body>
+    
+</body>
+</html>
+
       
       const resultsContainer = document.getElementById('results');
       let score = 3;

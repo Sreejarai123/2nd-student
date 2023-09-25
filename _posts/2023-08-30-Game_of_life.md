@@ -374,5 +374,17 @@ courses: { compsci: {week: 2}}
         }
     })();
 </script>
+<html>
+<head>
+    <style>
+        body {
+            background-color: #ffffcc; /* Light Yellow color */
+        }
+    </style>
+</head>
+<body>
+    
+</body>
+</html>
 
 

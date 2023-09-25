@@ -34,44 +34,27 @@ title: Student Blog
 - to fix this we rebooted the computer and cleaned up our vs code and it ended up working after that
 - Another issue was that my partner was on windows and I was using a mac which made it difficult for us to help each other but we became more familiar with each other's laptops.
 - BUT with an AGILE MINDSET and the idea that nothing is too difficult to achieve we persevered through all the issues we faced. 
-
-<html>|
-<table>
-  <tr>
-    <th>period</th>
-    <th> class</th> 
-    <th>teacher</th>
-  </tr>
-  <tr>
-    <td>1</td>
-    <td>AP CSP</td> 
-    <td>Mr. Mortenson</td>
-  </tr>
-  <tr>
-    <td>2</td>
-    <td>AP STATS</td> 
-    <td>Mr. Deputron</td>
-  </tr>
-  <tr>
-    <td>3</td>
-    <td>APUSH</td> 
-    <td>Mr. Swanson</td>
-  </tr>
-  <tr>
-    <td>4</td>
-    <td>APEL</td> 
-    <td>Mrs. Dafoe</td>
-  </tr>
-  <tr>
-    <td>5</td>
-    <td>APES</td> 
-    <td>Mr. Hendricks</td>
-  </tr>
-</table>
+<html>
+<head>
+    <style>
+        body {
+            background-color: #a6e3e9; /* Baby Blue color */
+        }
+    </style>
+</head>
+<body>
+    
+</body>
 </html>
-
-
-
-
-  
-   
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>White Cursive Font on Purple Background</title>
+    <style>
+        body {
+            background-color: light blue; /* Set background color to purple */
+            color: purple; /* Set text color to white */
+            font-family: cursive; /* Use cursive font-family */
+            font-size: 18px; /* Set the font size (adjust as needed) */
+        }
+    </style>

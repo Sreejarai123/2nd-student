@@ -8,8 +8,8 @@ type: hacks
 courses: { compsci: {week: 3} }
 ---
 
-
-<html>|
+## Sreeja's 2023 1st tri class schedule
+<html>
 <table>
   <tr>
     <th>period</th>
@@ -19,7 +19,7 @@ courses: { compsci: {week: 3} }
   <tr>
     <td>1</td>
     <td>AP CSP</td> 
-    <td>Mr. Mortenson</td>
+    <td>Mr. Lopez</td>
   </tr>
   <tr>
     <td>2</td>
@@ -48,4 +48,17 @@ courses: { compsci: {week: 3} }
 
 ## Benefits of the Markdown Table
 - the markdon table makes everything look super organized and it creates a really well formatted table
-- 
+- also with a different code you can make the markdown table interactive and make it so that the user can ask their questions on a set of data that you want. 
+<html>
+<head>
+    <style>
+        body {
+            background-color: #ffffcc; /* Light Yellow color */
+        }
+    </style>
+</head>
+<body>
+    
+</body>
+</html>
+ 
