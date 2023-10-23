@@ -10,3 +10,4 @@ courses: { compsci: {week: 7} }
 
 ## what we did
 - I started our group lesson
+- additonally made many commits and changes onto our backend
