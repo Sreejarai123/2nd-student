@@ -2,9 +2,9 @@
 toc: true
 comments: true
 layout: post
-title: Week 10 college board quizez
+title: college board quizez
 description: This is my 10-12 college board quizzes plan 
-type: tangibles
+type: hacks
 courses: { compsci: {week: 7} }
 
 ## How was the test
