@@ -1,4 +1,13 @@
-This is my trimester one reflection:
+---
+toc: true
+comments: true
+layout: post
+title: trimester one review
+description: this is my trimester one review and what I learned as well as what I need to work on
+type: tangibles
+courses: { compsci: {week: 7} }
+---
+
 ## Main things I learned
 - one important thing I learned is psuedo code: a code that uses word like things and is what the AP colleeboard exams are in 
 - Additionally I learned vocab like booleans, if then statements, lists and procedures, algorithoms, libraries, etc from all the student teachings which are in my blogs organized 
