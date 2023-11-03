@@ -13,3 +13,4 @@ courses: { compsci: {week: 7} }
 - we changed the font and the color of the home page using style.css to make it look really cute
 - additionally we started prepping for the student teaching
 - additionally in week nine we started to commit more and actively make more changes
+- we did our student teaching on devloping algorithoms: it was kind of difficult to do because noone really responde to what we were saying but in the end it worked and we got a 3.9

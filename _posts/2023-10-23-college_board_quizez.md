@@ -2,9 +2,11 @@
 toc: true
 comments: true
 layout: post
-title: college board quizez
-description: This is my 10-12 college board quizzes plan 
+title: College Board Review Ticket
+description: This is my college board quizzes
 type: tangibles
+courses: { compsci: {week: 7} }
+---
 
 ## How was the test
 - overall the test was good

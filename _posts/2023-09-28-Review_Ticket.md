@@ -5,7 +5,7 @@ layout: post
 title: Week 6 Review Ticket
 description: This is my week six review ticket in which we peer graded our web command basic test
 type: tangibles
-courses: { compsci: {week: 6} }
+courses: { compsci: {week: 7} }
 ---
 
 
