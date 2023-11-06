@@ -2,9 +2,9 @@
 toc: true
 comments: true
 layout: post
-title: College Board Review Ticket
-description: This is my college board quizzes
-type: tangibles
+title: college board quizzes
+description: college board quizzes
+type: hacks
 courses: { compsci: {week: 7} }
 ---
 
