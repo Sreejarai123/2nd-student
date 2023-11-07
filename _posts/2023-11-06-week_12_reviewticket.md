@@ -2,17 +2,16 @@
 toc: true
 comments: true
 layout: post
-title: week 6 plan
-description: week 6 plans
-type: hacks
-courses: { compsci: {week: 6} }
+title: Week 12 Review Ticket
+description: This is my week twelve review ticket 
+type: tangibles
+courses: { compsci: {week: 7} }
 ---
-Monday - Clean up cluster and size of pages that take up a lot of load time
-Tuesday - Talk about using API for passion project with team
-Wednesday - Watch all AP Classroom videos up to date
-Thursday - Created a shared repo with team
-Friday - Assign roles for passion project team
 
+- this is finals week, tuesday was the last day of comp sci for this trimester
+- monday I worked on finishing the college board quiz
+- monday night I worked on adding in things to my personal blog and making it look really good and organized
+    
 </body>
 </html>
 html lang="en">
