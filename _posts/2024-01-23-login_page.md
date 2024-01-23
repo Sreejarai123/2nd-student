@@ -7,21 +7,84 @@ description: login page
 type: hacks
 courses: { compsci: {week: 7} }
 ---
-<html> 
-<html> 
-<head> 
-	<title>Login Page</title> 
-</head> 
-<body> 
-	<h2>Login</h2> 
-	<form method="POST" action="login.php"> 
-		<label for="username">Username:</label> 
-		<input type="text" id="username" name="username" required><br> 
- 
-		<label for="password">Password:</label> 
-		<input type="password" id="password" name="password" required><br> 
- 
-		<input type="submit" value="Login"> 
-	</form> 
-</body> 
-</html> 
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login System</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 50px;
+        }
+
+        input {
+            margin-bottom: 10px;
+            padding: 8px;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Login System</h2>
+
+    <form id="loginForm">
+        <label for="username">Username:</label>
+        <input type="text" id="username" required>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" required>
+
+        <button type="button" onclick="login()">Login</button>
+    </form>
+
+    <p>Don't have an account? <a href="javascript:void(0);" onclick="toggleForm()">Register</a></p>
+
+    <form id="registerForm" style="display: none;">
+        <label for="newUsername">New Username:</label>
+        <input type="text" id="newUsername" required>
+
+        <label for="newPassword">New Password:</label>
+        <input type="password" id="newPassword" required>
+
+        <button type="button" onclick="register()">Register</button>
+    </form>
+
+    <script>
+        function toggleForm() {
+            document.getElementById('loginForm').style.display = 'none';
+            document.getElementById('registerForm').style.display = 'block';
+        }
+
+        function login() {
+            var username = document.getElementById('username').value;
+            var password = document.getElementById('password').value;
+
+            // Implement login logic (JavaScript or connect to a backend)
+            // For simplicity, let's assume successful login and redirect to the game page
+            redirectToGamePage(username);
+        }
+
+        function register() {
+            var newUsername = document.getElementById('newUsername').value;
+            var newPassword = document.getElementById('newPassword').value;
+
+            // Implement registration logic (JavaScript or connect to a backend)
+            // For simplicity, let's assume successful registration and redirect to the game page
+            redirectToGamePage(newUsername);
+        }
+
+        function redirectToGamePage(username) {
+            // Store the username in sessionStorage (can be replaced with more secure storage)
+            sessionStorage.setItem('username', username);
+
+            // Redirect to the game page
+            window.location.href = 'http://127.0.0.1:4200/student//2024/01/23/chemicalmerge.html';
+        }
+    </script>
+</body>
+
+</html>
