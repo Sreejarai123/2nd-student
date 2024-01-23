@@ -1,9 +1,8 @@
 ---
 toc: true
-comments: true
+comments: false
 layout: post
 title: chemical merge
-description: chemical merge
 type: hacks
 courses: { compsci: {week: 7} }
 ---
