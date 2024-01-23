@@ -71,6 +71,7 @@ courses: { compsci: {week: 7} }
         const scoreElement = document.getElementById('score');
         let score = 0;
         let elements = [];
+        let selectedElementIndex = 0;
 
         function initializeGame() {
             score = 0;
@@ -80,6 +81,9 @@ courses: { compsci: {week: 7} }
             // Display initial elements
             displayElements();
             displayGrid();
+
+            // Listen for arrow key events
+            window.addEventListener('keydown', handleKeyPress);
         }
 
         function generateInitialElements() {
@@ -99,13 +103,16 @@ courses: { compsci: {week: 7} }
 
         function displayElements() {
             elementsContainer.innerHTML = '';
-            for (const element of elements) {
+            for (let i = 0; i < elements.length; i++) {
                 const elementDiv = document.createElement('div');
                 elementDiv.className = 'element';
-                elementDiv.textContent = element;
+                elementDiv.textContent = elements[i];
                 elementDiv.draggable = true;
                 elementDiv.addEventListener('dragstart', (event) => {
-                    event.dataTransfer.setData('text/plain', element);
+                    event.dataTransfer.setData('text/plain', elements[i]);
+                });
+                elementDiv.addEventListener('click', () => {
+                    selectedElementIndex = i;
                 });
                 elementsContainer.appendChild(elementDiv);
             }
@@ -131,11 +138,11 @@ courses: { compsci: {week: 7} }
         function mergeElementsInGrid(index, draggedElement) {
             const cell = gridContainer.children[index];
             if (!cell.textContent) {
-                // If the cell is empty, drop the element
-                cell.textContent = draggedElement;
+                // If the cell is empty, drop the selected element
+                cell.textContent = elements[selectedElementIndex];
                 checkMerge(index);
-                removeElementFromList(draggedElement);
-                generateNewElement();
+                elements.splice(selectedElementIndex, 1, getRandomElement());
+                displayElements();
                 updateScore();
             }
         }
@@ -175,19 +182,6 @@ courses: { compsci: {week: 7} }
             return mergingRules[element] || element;
         }
 
-        function removeElementFromList(element) {
-            const index = elements.indexOf(element);
-            if (index !== -1) {
-                elements.splice(index, 1);
-            }
-        }
-
-        function generateNewElement() {
-            const newElement = getRandomElement();
-            elements.push(newElement);
-            displayElements();
-        }
-
         function getNeighborIndex(index) {
             // Define the layout of the grid (4x4)
             const rows = 4;
@@ -220,8 +214,25 @@ courses: { compsci: {week: 7} }
             scoreElement.textContent = 'Score: ' + score;
         }
 
+        function handleKeyPress(event) {
+            if (event.key === 'ArrowLeft' || event.key === 'ArrowRight') {
+                moveSelectedElement(event.key);
+            }
+        }
+
+        function moveSelectedElement(direction) {
+            const currentIndex = selectedElementIndex;
+
+            if (direction === 'ArrowLeft' && currentIndex > 0) {
+                selectedElementIndex--;
+            } else if (direction === 'ArrowRight' && currentIndex < elements.length - 1) {
+                selectedElementIndex++;
+            }
+
+            displayElements();
+        }
+
         // Initialize the game on page load
         initializeGame();
     </script>
 </body>
-</html>
