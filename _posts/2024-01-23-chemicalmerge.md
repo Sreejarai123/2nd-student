@@ -7,7 +7,6 @@ description: chemical merge
 type: hacks
 courses: { compsci: {week: 7} }
 ---
-<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -56,6 +55,14 @@ courses: { compsci: {week: 7} }
             align-items: center;
             justify-content: center;
         }
+
+        #startButton,
+        #restartButton {
+            margin-top: 20px;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
     </style>
     <title>Periodic Element 2048 Game</title>
 </head>
@@ -64,11 +71,15 @@ courses: { compsci: {week: 7} }
         <div id="score">Score: 0</div>
         <div id="elements-container"></div>
         <div class="grid" id="grid"></div>
+        <button id="startButton" onclick="startGame()">Start</button>
+        <button id="restartButton" onclick="restartGame()" disabled>Restart</button>
     </div>
     <script>
         const elementsContainer = document.getElementById('elements-container');
         const gridContainer = document.getElementById('grid');
         const scoreElement = document.getElementById('score');
+        const startButton = document.getElementById('startButton');
+        const restartButton = document.getElementById('restartButton');
         let score = 0;
         let elements = [];
         let selectedElementIndex = 0;
@@ -144,28 +155,18 @@ courses: { compsci: {week: 7} }
                 elements.splice(selectedElementIndex, 1, getRandomElement());
                 displayElements();
                 updateScore();
+            } else if (cell.textContent === elements[selectedElementIndex]) {
+                // If the cell has the same element, combine them
+                cell.textContent = combineElements(cell.textContent);
+                elements.splice(selectedElementIndex, 1, getRandomElement());
+                displayElements();
+                updateScore();
             }
         }
 
-        function checkMerge(index) {
-            const cell = gridContainer.children[index];
-            const neighborIndex = getNeighborIndex(index);
-
-            if (neighborIndex !== -1) {
-                const neighborCell = gridContainer.children[neighborIndex];
-                if (cell.textContent === neighborCell.textContent) {
-                    // If neighboring cells have the same element, merge them
-                    const mergedElement = mergeElements(cell.textContent);
-                    cell.textContent = mergedElement;
-                    neighborCell.textContent = '';
-                    updateScore();
-                }
-            }
-        }
-
-        function mergeElements(element) {
-            // Define merging rules here
-            const mergingRules = {
+        function combineElements(element) {
+            // Define combining rules here
+            const combiningRules = {
                 'H': 'He',
                 'He': 'Li',
                 'Li': 'Be',
@@ -176,10 +177,10 @@ courses: { compsci: {week: 7} }
                 'O': 'F',
                 'F': 'Ne',
                 'Ne': 'Na',
-                // Add more merging rules as needed
+                // Add more combining rules as needed
             };
 
-            return mergingRules[element] || element;
+            return combiningRules[element] || element;
         }
 
         function getNeighborIndex(index) {
@@ -232,7 +233,23 @@ courses: { compsci: {week: 7} }
             displayElements();
         }
 
+        function startGame() {
+            initializeGame();
+            startButton.disabled = true;
+            restartButton.disabled = false;
+        }
+
+        function restartGame() {
+            elements = [];
+            selectedElementIndex = 0;
+            startButton.disabled = false;
+            restartButton.disabled = true;
+            initializeGame();
+        }
+
         // Initialize the game on page load
-        initializeGame();
+        restartGame(); // Automatically start the game on page load
+
     </script>
 </body>
+</html>
