@@ -1,14 +1,12 @@
 ---
-toc: true
-comments: true
+toc: false
+comments: false
 layout: post
 title: snake game
-description: snake game
 type: hacks
 courses: { compsci: {week: 7} }
 ---
 
-<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -33,12 +31,13 @@ courses: { compsci: {week: 7} }
 
         canvas {
             border: 1px solid #000;
+            display: none;
         }
     </style>
     <title>Snake Game</title>
 </head>
 <body>
-    <button id="startButton">Start Game</button>
+    <button id="startButton" onclick="startGame()">Start Game</button>
     <canvas id="snakeCanvas" width="400" height="400"></canvas>
     <script>
         const canvas = document.getElementById('snakeCanvas');
@@ -116,12 +115,18 @@ courses: { compsci: {week: 7} }
         }
 
         function startGame() {
-            resetGame();
-            gameRunning = true;
+            if (!gameRunning) {
+                resetGame();
+                gameRunning = true;
+                document.getElementById('startButton').style.display = 'none';
+                canvas.style.display = 'block';
+            }
         }
 
         function stopGame() {
             gameRunning = false;
+            document.getElementById('startButton').style.display = 'block';
+            canvas.style.display = 'none';
         }
 
         function handleKeyPress(event) {
@@ -143,7 +148,6 @@ courses: { compsci: {week: 7} }
             }
         }
 
-        document.getElementById('startButton').addEventListener('click', startGame);
         document.addEventListener('keydown', handleKeyPress);
 
         function gameLoop() {
@@ -157,5 +161,4 @@ courses: { compsci: {week: 7} }
     </script>
 </body>
 </html>
-
 
