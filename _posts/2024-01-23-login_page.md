@@ -95,6 +95,6 @@ courses: { compsci: {week: 7} }
           <button onClick = "window.location.href ='http://127.0.0.1:4200/student//2024/01/31/signup.html'" class="button-spacing" >Sign Up</button>
    </p>
   </form>
-  <!-- Your JavaScript code --> 
+
 </body>
 </html>
