@@ -6,7 +6,7 @@ title: scrum board
 type: hacks
 courses: { compsci: {week: 7} }
 ---
-## Our deadlines:
+## Our Scrum Board Done By Sreeja Rai:
 - By January 20th we wanted to be done with our login page since there was a spot check coming up. For this we all collaboratevily created our own individual login pages and signup pages to help each other in the long run
 - Abby and Sreeja mainly worked on the login page and tanvi and chrissie worked on the singup page. For this we had to make sure our postman and backend was working we all had our own backend but in the end used sreeja's backend. 
 - At this point our login page was working however, we were having trouble with our singup page and the database.
